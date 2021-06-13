@@ -1,37 +1,18 @@
-
 import React from 'react';
-import TextField from '@material-ui/core/TextField';
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
-import ThreeDRotation from '@material-ui/icons/ThreeDRotation';
-import { makeStyles } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
+export default function FixedContainer() {
+  return (
+    <React.Fragment>
+      <CssBaseline />
+      <Container fixed>
+        <Typography component="div" style={{ backgroundColor: 'black', height: '100vh' }} />
+      </Container>
+    </React.Fragment>
 
- const classes = makeStyles(() => ({
-   quadrado: {
-     backgroundColor: 'black',
-     width: 100,
-     height: 100,
-
-   },
-
-  
- }));
-
-
-function  App() {
-  const styles = classes ()
-
-  return(
-    
-    <div className="App">
-     <div className={styles.quadrado}></div>
-       <TextField id="filled-basic" label="Email" variant="filled" />
-       
    
-       
-      
-   </div>
   );
 }
 
-export default App;
